@@ -95,9 +95,6 @@ namespace Broker
                 connection.Socket.Close();
                 Console.WriteLine($"Error: Failed to use {address} socket. Deleting from storage");
                 // Del from storage
-                ConnectionsStorage.Remove(address);
-                connection.Socket.Close();
-
             }
         }
     }
